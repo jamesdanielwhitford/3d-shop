@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Top Navbar Styling */
+.top-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+/* Content Section Styling */
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#threejs-container {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Bottom Navbar Styling */
+.bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.bottom-navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+/* Animation Buttons Styling */
+.animation-buttons,
+.camera-animation-buttons,
+.necklace-buttons {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.animation-buttons {
+    bottom: 60px;
+    left: 10px;
+}
+
+.camera-animation-buttons {
+    top: 60px;
+    right: 10px;
+}
+
+.necklace-buttons {
+    top: 60px;
+    left: 10px;
+}
+
+.animation-buttons button,
+.camera-animation-buttons button,
+.necklace-buttons button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .top-navbar button,
+    .bottom-navbar button {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .animation-buttons,
+    .camera-animation-buttons,
+    .necklace-buttons {
+        padding: 5px;
+    }
+
+    .animation-buttons button,
+    .camera-animation-buttons button,
+    .necklace-buttons button {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+}

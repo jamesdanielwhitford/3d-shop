@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Object Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <button id="handButton">✋</button>
+        <button id="earButton">👂</button>
+        <button id="chainButton">🔗</button>
+        <button id="watchButton">⌚</button>
+        <button id="glassesButton">👓</button>
+    </nav>
+    
+    <!-- Content Section -->
+    <div class="content">
+        <button class="arrow left-arrow">◀</button>
+        <div id="threejs-container"></div>
+        <button class="arrow right-arrow">▶</button>
+    </div>
+    
+    <!-- Bottom Navbar -->
+    <nav class="bottom-navbar">
+        <button id="shuffleButton">🔀</button>
+        <button id="plusButton">➕</button>
+        <button id="cartButton">🛒</button>
+    </nav>
+
+    <!-- Animation Control Buttons -->
+    <div class="animation-buttons">
+        <button id="actionButton">Action</button>
+        <button id="action001Button">Action.001</button>
+        <button id="animLayer1Button">Anim Layer 1</button>
+        <button id="animLayer2Button">Anim Layer 2</button>
+        <button id="armatureLayer0Button">Armature Layer 0</button>
+    </div>
+
+    <!-- Necklace Control Buttons -->
+    <div class="necklace-buttons">
+        <button id="necklace1Button">Necklace 1</button>
+        <button id="necklace2Button">Necklace 2</button>
+    </div>
+
+    <!-- Include Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Include GLTFLoader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- Include OrbitControls -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
